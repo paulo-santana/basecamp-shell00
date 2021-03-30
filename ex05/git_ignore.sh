@@ -1,2 +1,2 @@
 #!/bin/sh
-git check-ignore $(find | cut -b 3-)
+git status --ignored -s | grep '!!' | cut -c 4-
